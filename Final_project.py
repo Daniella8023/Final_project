@@ -127,7 +127,7 @@ def get_google_picture_using_cache(actor_name,cache):
                 break
         cache[google_name] = img_url 
         save_cache(cache)   
-        return cache[google_name]
+        return cache[google_name] #cache['jim+carrey']='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyE4sZsklTbWj-4moHZPm075AG3vTivu_unU5DcAF03qZFUZNLGWqmH4qkCoA&s'
 #print(get_google_picture_using_cache('jim carrey',movie_cache))
 
 def get_imdb_url_using_cache(actor_name, movie, cache):
