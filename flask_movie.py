@@ -52,12 +52,12 @@ def filmography_form():
 
     bar_data = go.Bar(x=x_data, y=y_data)
     fig = go.Figure(data=bar_data)
-    fig.write_image("/Users/danqiao/Final_project/static/1.png")
+    fig.write_image("/Users/danqiao/Final_project/static/{}_rating.png".format(actor))
     a = "{:.3f}".format(rating/i)
     #print('average raing: ', a)    
     img_url = Final_project.get_google_picture_using_cache(actor, Final_project.movie_cache)
     req = requests.get(img_url)
-    with open("/Users/danqiao/Final_project/static/2.jpg","wb")as f:
+    with open("/Users/danqiao/Final_project/static/{}_pic.jpg".format(actor),"wb")as f:
         f.write(req.content)
     #print(img_url)
 
