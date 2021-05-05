@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8"/>
+    <title>HTML Forms Response</title>
+</head>
+<script>
+  var pictureUrl = {img_url};
+  document.getElementById("pic1").src = pictureUrl;
+</script>
+
+<body>
+  <form action="/filmography_form" method="POST">
+    <h1>Third, Output :) </h1>
+    <p>Actor: {{actor_name}}</p>
+    <img 
+        src="static/2.jpg"/>
+    <p>Average Rating: {{a}}</p>
+    <p>{{actor_list}}</p>
+    <h2>Filmography: </h2>
+    <img 
+        src="static/1.png"/>
+  </form>  
+</body>
+
+</html>

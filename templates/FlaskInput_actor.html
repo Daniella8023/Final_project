@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8"/>
+    <title>HTML Forms Demo</title>
+</head>
+
+<body>
+  <form action="/filmography_form" method="POST">
+    <h1>Second, Actor</h1>
+    <p>Movie: {{movie_name}}</p>
+    <p>Actor List Here: </p>
+    <p>{{actor_list}}</p>
+    <p>
+        Enter a actor you want to search:  <input name="actor" type="text"/><br/><br/><br/>
+    </p>
+    <input type="submit" value="Submit Actor Name"/>
+  </form>  
+</body>
+
+</html>
